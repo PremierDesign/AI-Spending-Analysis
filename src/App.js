@@ -4,24 +4,24 @@ import { v4 as uuidV4 } from "uuid";
 
 function App() {
   const [items, setItems] = useState([
-    {
-      // id: uuidV4(),
-      company: "Company XYZ",
-      date: Date.now(),
-      amount: "$21.56",
-    },
-    {
-      // id: uuidV4(),
-      company: "Company ABC",
-      date: Date.now(),
-      amount: "$56.78",
-    },
-    {
-      // id: uuidV4(),
-      company: "Company CBD",
-      date: Date.now(),
-      amount: "$36.78",
-    },
+    //   {
+    //     // id: uuidV4(),
+    //     company: "Company XYZ",
+    //     date: Date.now(),
+    //     amount: "$21.56",
+    //   },
+    //   {
+    //     // id: uuidV4(),
+    //     company: "Company ABC",
+    //     date: Date.now(),
+    //     amount: "$56.78",
+    //   },
+    //   {
+    //     // id: uuidV4(),
+    //     company: "Company CBD",
+    //     date: Date.now(),
+    //     amount: "$36.78",
+    //   },
   ]);
 
   const [csvData, setCsvData] = useState([]);

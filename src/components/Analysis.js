@@ -39,7 +39,7 @@ export default function Analysis({ csvData }) {
 
       <div>{isLoading && <p>Loading...</p>}</div>
       {analysisResult && (
-        <div>
+        <div className="analysisResponse me-2 border-secondary border-thick rounded-lg p-3">
           <strong>Analysis:</strong>
           {analysisResult}
         </div>

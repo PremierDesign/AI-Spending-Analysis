@@ -3,7 +3,6 @@ import Papa from "papaparse";
 
 export default function Add({ onCsvUpload }) {
   const [selectedFile, setSelectedFile] = useState(null);
-  // const [parsedData, setParasedData] = useState([]);
 
   const handleFileChange = (event) => {
     setSelectedFile(event.target.files[0]);
@@ -13,11 +12,12 @@ export default function Add({ onCsvUpload }) {
     if (selectedFile) {
       Papa.parse(selectedFile, {
         complete: (result) => {
-          //console.log("Parced:", result.data);
-          // setParasedData(result.data);
           if (onCsvUpload) {
-            onCsvUpload(result.data);
-            //console.log(result.data);
+            const filteredData = result.data.filter(
+              (item) => item.Category && item.Category.trim() !== ""
+            );
+
+            onCsvUpload(filteredData);
           }
         },
         header: true,

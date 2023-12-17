@@ -12,8 +12,9 @@ export default function Main({ items, onCsvUpload, csvData }) {
         <Add onCsvUpload={onCsvUpload} />
         <Transactions items={items} csvData={csvData} />
       </div>
-      <div>
-        <Graphs />
+
+      <div className="">
+        <Graphs csvData={csvData} />
         <Analysis csvData={csvData} />
       </div>
     </div>

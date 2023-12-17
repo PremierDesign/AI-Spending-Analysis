@@ -51,6 +51,10 @@
   /* border-radius: 50%; */
 }
 
+.analysisResponse {
+  font-size: 14px;
+}
+
 button {
   font-size: 12px;
 }
